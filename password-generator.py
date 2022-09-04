@@ -1,5 +1,6 @@
 import random
 import string
+import pyperclip
 
 def generateRandomPassword(numOfChar):
     letters = string.ascii_letters + string.digits + string.punctuation # this line generates letters, numbers and symbols
@@ -13,7 +14,9 @@ while True:
         break
 
     try:
-        print(f"Genrated password: {generateRandomPassword(int(numberOfCharacters))}")
+        randomStringOfPassword = generateRandomPassword(int(numberOfCharacters))
+        pyperclip.copy(randomStringOfPassword)
+        print(f"Genrated password: {randomStringOfPassword}")
         input("Press enter to continue...")
         break
 

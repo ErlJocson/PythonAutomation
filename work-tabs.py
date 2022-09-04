@@ -1,10 +1,10 @@
+print("Opening work tabs ......")
+
 import webbrowser
 
 def openTabs(listOfTabs):
     for i in listOfTabs:
         webbrowser.open(i)
-
-print("Opening work tabs ......")
 
 tabsToOpen = [
     "https://linkedin.com",
