@@ -1,5 +1,4 @@
 print("Opening work tabs ......")
-
 import webbrowser
 
 def openTabs(listOfTabs):
